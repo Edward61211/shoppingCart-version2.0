@@ -1,0 +1,1461 @@
+<!-- Comment navigation  -->
+<!-- header/hero/3 colums section/Picture puzzle/price table/3 image/triple hero /product section/grid image section/map/footer-->
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Shopping Home Page</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body class="flex h-full w-full">
+    <div
+      class="w-full h-full bg-gradient-to-bl from-teal-200 via-blue-200 to-fuchsia-200"
+    >
+      <!-- header  -->
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none gap-3">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+            >
+              <div class="card-body">
+                <span class="font-bold text-lg">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-14 rounded-full">
+                <img src="../img/fire&ice.jpeg" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- hero -->
+      <div class="hero min-h-screen bg-base-200 bg-transparent">
+        <div class="hero-content flex-col md:flex-row-reverse max-md:mb-52">
+          <img
+            src="../img/CatOnRocket.jpeg"
+            class="max-w-sm rounded-lg shadow-2xl w-96 h-96 max-md:w-60 max-md:h-60 mask mask-decagon max-md:mask-heart"
+          />
+          <div>
+            <h1 class="text-5xl font-bold max-md:text-2xl text-black">
+              Astronaut Cat 🚀
+            </h1>
+            <p class="py-6 max-md:py-2 text-black">
+              Pawprints in the Stardust I am Felinator, the Starlord of Cats
+              Exploring cosmos on lean feline slats Shooting through darkness, a
+              furry rocket Claws out, whiskers poised in my small socket
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+      <!-- 3 columns section  -->
+      <section class="bg-gray-900 text-white">
+        <div
+          class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+        >
+          <div class="mx-auto max-w-lg text-center">
+            <h2 class="text-3xl font-bold sm:text-4xl">
+              Kickstart your jounrney
+            </h2>
+
+            <p class="mt-4 text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
+              fugit consequuntur saepe laborum.
+            </p>
+          </div>
+
+          <div
+            class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M972.011 899.734H55.013c-25.786 0-46.682 23.455-46.682 52.39v3.743c0 28.935 20.896 52.389 46.682 52.389h916.998c25.787 0 46.684-23.454 46.684-52.389v-3.743c-0.001-28.935-20.897-52.39-46.684-52.39z"
+                  fill="#C45FA0"
+                />
+                <path
+                  d="M66.007 15.343h-3.744c-28.934 0-52.389 20.589-52.389 45.994V964.75c0 25.404 23.455 45.993 52.389 45.993h3.744c28.934 0 52.389-20.589 52.389-45.993V61.336c0-25.404-23.455-45.993-52.389-45.993z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M309.615 402.957h-3.743c-28.935 0-52.389 21.033-52.389 46.966v470.815c0 25.941 23.454 46.971 52.389 46.971h3.743c28.936 0 52.39-21.028 52.39-46.971V449.923c-0.001-25.933-23.455-46.966-52.39-46.966z"
+                  fill="#F0D043"
+                />
+                <path
+                  d="M571.563 298.496h-3.744c-28.935 0-52.389 21.028-52.389 46.97v575.273c0 25.941 23.454 46.971 52.389 46.971h3.744c28.934 0 52.389-21.028 52.389-46.971V345.465c-0.001-25.942-23.456-46.969-52.389-46.969z"
+                  fill="#F39A2B"
+                />
+                <path
+                  d="M833.508 118.95h-3.738c-28.938 0-52.393 21.028-52.393 46.97v754.818c0 25.941 23.453 46.971 52.393 46.971h3.738c28.939 0 52.39-21.028 52.39-46.971V165.92c-0.001-25.941-23.45-46.97-52.39-46.97z"
+                  fill="#E5594F"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M330.147 727.583l-3.105-2.113c-23.995-16.366-56.736-10.206-73.12 13.753L120.381 934.43c-16.389 23.958-10.22 56.646 13.779 73.002l3.1 2.118c24 16.366 56.741 10.206 73.125-13.752l133.542-195.207c16.388-23.959 10.219-56.642-13.78-73.008z"
+                  fill="#E5594F"
+                />
+                <path
+                  d="M457.934 727.583l-3.1-2.113c-23.999-16.366-56.74-10.206-73.129 13.753L248.168 934.43c-16.388 23.958-10.22 56.646 13.775 73.002l3.109 2.118c23.995 16.366 56.736 10.206 73.12-13.752l133.537-195.207c16.394-23.959 10.225-56.642-13.775-73.008z"
+                  fill="#F0D043"
+                />
+                <path
+                  d="M895.09 934.213L761.813 740.007c-16.353-23.837-49.03-29.961-72.979-13.689l-3.101 2.108c-23.949 16.28-30.104 48.796-13.748 72.629L805.26 995.261c16.357 23.838 49.031 29.971 72.98 13.686l3.101-2.1c23.95-16.282 30.105-48.797 13.749-72.634z"
+                  fill="#E5594F"
+                />
+                <path
+                  d="M767.555 934.213L634.279 740.007c-16.357-23.837-49.031-29.961-72.985-13.689l-3.096 2.108c-23.954 16.28-30.109 48.796-13.752 72.629l133.275 194.206c16.357 23.838 49.03 29.971 72.984 13.686l3.096-2.1c23.955-16.282 30.11-48.797 13.754-72.634z"
+                  fill="#F0D043"
+                />
+                <path
+                  d="M712.252 364.688L577.453 338.78l-66.275-120.278-66.28 120.278-134.794 25.908 93.834 100.25-17.037 136.291 124.277-58.327 124.272 58.327-17.037-136.291z"
+                  fill="#F39A2B"
+                />
+                <path
+                  d="M803.625 434.496c-1.459 160.596-131.855 290.993-292.452 292.453-76.346 0.693-150.076-30.799-204.647-83.529-56.995-55.073-87.084-130.821-87.796-208.923-0.676-74.35-116.033-74.415-115.355 0 2.034 223.497 184.3 405.775 407.798 407.807 223.519 2.032 405.803-187.375 407.808-407.807 0.675-74.416-114.679-74.351-115.356-0.001z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M218.73 415.399c1.462-160.594 131.845-290.992 292.443-292.455 76.347-0.696 150.079 30.801 204.647 83.531 56.997 55.075 87.093 130.822 87.805 208.923 0.677 74.35 116.031 74.416 115.355 0C916.948 191.905 734.669 9.624 511.173 7.589c-223.518-2.035-405.793 187.38-407.798 407.81-0.678 74.415 114.679 74.35 115.355 0z"
+                  fill="#C45FA0"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M466.63 332.141l-2.949-2.286c-22.823-17.687-55.664-13.527-73.352 9.296L168.406 625.474c-17.691 22.821-13.529 55.66 9.297 73.354l2.949 2.29c22.826 17.683 55.666 13.528 73.352-9.299l221.922-286.32c17.694-22.824 13.53-55.669-9.296-73.358z"
+                  fill="#E5594F"
+                />
+                <path
+                  d="M700.612 619.811L475.887 335.684c-17.915-22.648-50.795-26.486-73.444-8.571l-2.925 2.315c-22.649 17.915-26.489 50.793-8.574 73.442l224.724 284.125c17.91 22.649 50.796 26.488 73.445 8.573l2.925-2.317c22.65-17.911 26.489-50.797 8.574-73.44z"
+                  fill="#F39A2B"
+                />
+                <path
+                  d="M970.613 897.67H55.454c-25.734 0-46.588 23.407-46.588 52.283v3.736c0 28.876 20.854 52.284 46.588 52.284h915.16c25.734 0 46.59-23.408 46.59-52.284v-3.736c-0.001-28.876-20.856-52.283-46.591-52.283z"
+                  fill="#C45FA0"
+                />
+                <path
+                  d="M66.425 15.049h-3.736c-28.876 0-52.284 20.551-52.284 45.901v901.601c0 25.353 23.407 45.9 52.284 45.9h3.736c28.876 0 52.284-20.548 52.284-45.9V60.95c0-25.35-23.408-45.901-52.284-45.901z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M914.9 334.433l-2.91-2.346c-22.489-18.107-55.408-14.549-73.51 7.94L611.312 622.201c-18.113 22.491-14.556 55.41 7.938 73.517l2.905 2.347c22.494 18.107 55.408 14.546 73.52-7.941l227.169-282.18c18.106-22.49 14.546-55.403-7.944-73.511z"
+                  fill="#F0D043"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M144.302 134.343c-46.171 0-83.599 37.904-83.599 84.666 0 46.753 37.428 84.661 83.599 84.661 46.179 0 83.607-37.908 83.607-84.661 0-46.761-37.429-84.666-83.607-84.666z"
+                  fill="#F0D043"
+                />
+                <path
+                  d="M392.166 305.246l-2.804-1.718c-21.688-13.291-49.909-6.259-63.035 15.704L19.112 833.375c-13.122 21.964-6.178 50.541 15.511 63.836l2.803 1.717c21.692 13.29 49.909 6.262 63.035-15.701l307.21-514.147c13.122-21.965 6.182-50.542-15.505-63.834z"
+                  fill="#6277BA"
+                />
+                <path
+                  d="M965.247 808.733H58.243c-25.673 0-46.481 20.812-46.481 46.484v3.319c0 25.674 20.808 46.481 46.481 46.481h907.004c25.67 0 46.481-20.808 46.481-46.481v-3.319c0.001-25.672-20.811-46.484-46.481-46.484z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M1012.051 845.512L796.742 221.268c-7.921-22.964-32.76-34.998-55.493-26.805l-2.944 1.061c-22.77 8.204-34.696 33.548-26.633 56.531L930.879 876.79c7.431 21.168 30.965 31.502 52.562 23.154l2.791-1.081c21.557-8.341 33.116-32.2 25.819-53.351z"
+                  fill="#F3A43D"
+                />
+                <path
+                  d="M570.545 577.868L406.071 317.869c-13.67-21.618-42.063-27.913-63.408-14.066l-2.758 1.792c-21.349 13.844-27.563 42.595-13.893 64.209l164.475 259.997c13.674 21.616 42.064 27.915 63.406 14.064l2.763-1.786c21.349-13.846 27.563-42.6 13.889-64.211z"
+                  fill="#C45FA0"
+                />
+                <path
+                  d="M776.738 198.775l-2.854-1.544c-21.998-11.928-50.051-4.265-62.77 17.169L492.012 583.709c-13.774 23.227-6.701 52.796 15.921 65.989l2.934 1.706c22.701 13.239 52.28 4.892 65.938-18.582l217.178-373.22c12.604-21.655 4.829-48.863-17.245-60.827z"
+                  fill="#E7685F"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M602.603 59.687c0-25.575-17.513-46.315-39.106-46.315h-97.781c-21.599 0-39.104 20.74-39.104 46.315l-39.113 83.372c0 25.571 17.51 46.312 39.113 46.312h175.991c21.603 0 39.111-20.741 39.111-46.312l-39.111-83.372zM901.225 193.767l-69.135-69.143c-15.274-15.271-42.318-12.985-60.405 5.099l-86.607 31.292c-18.088 18.087-20.369 45.135-5.091 60.41l124.45 124.45c15.271 15.267 42.317 12.993 60.406-5.098l31.292-86.607c18.087-18.085 20.365-45.132 5.09-60.403zM966.17 423.25l-83.368-39.111c-25.579 0-46.315 17.513-46.315 39.111v175.996c0 21.602 20.736 39.114 46.315 39.114l83.368-39.114c25.574 0 46.315-17.51 46.315-39.111v-97.77c0.001-21.602-20.741-39.115-46.315-39.115zM896.135 768.336l-31.292-86.611c-18.088-18.092-45.136-20.365-60.406-5.099l-124.45 124.453c-15.277 15.274-12.997 42.317 5.091 60.41l86.607 31.292c18.087 18.083 45.131 20.369 60.405 5.095l69.135-69.144c15.275-15.274 12.997-42.313-5.09-60.396zM602.603 833.134H426.611c-21.604 0-39.113 20.74-39.113 46.313l39.113 83.368c0 25.578 17.505 46.314 39.104 46.314h97.781c21.595 0 39.106-20.736 39.106-46.314l39.111-83.368c0.001-25.573-17.509-46.313-39.11-46.313zM349.223 801.079L224.777 676.626c-15.276-15.268-42.319-12.993-60.407 5.099l-31.294 86.611c-18.088 18.083-20.365 45.122-5.095 60.397l69.141 69.143c15.272 15.274 42.313 12.988 60.403-5.095l86.607-31.292c18.088-18.093 20.368-45.135 5.091-60.41zM146.408 384.139L63.042 423.25c-25.583 0-46.315 17.513-46.315 39.115v97.77c0 21.603 20.732 39.111 46.315 39.111l83.366 39.114c25.579 0 46.315-17.514 46.315-39.114V423.25c0.001-21.598-20.736-39.111-46.315-39.111zM344.133 161.015l-86.607-31.292c-18.089-18.083-45.131-20.369-60.403-5.099l-69.141 69.143c-15.271 15.271-12.993 42.318 5.095 60.402l31.294 86.607c18.087 18.091 45.131 20.365 60.407 5.098l124.446-124.45c15.276-15.275 12.996-42.322-5.091-60.409z"
+                  fill="#C45FA0"
+                />
+                <path
+                  d="M790.521 523.425c-1.304 151.426-124.434 274.556-275.858 275.859-73.322 0.631-142.885-29.461-195.057-80.795-52.501-51.653-80.167-122.136-80.795-195.061-0.565-65.825-102.694-65.881-102.125 0 1.785 207.093 170.883 376.197 377.977 377.98 207.115 1.783 376.223-173.582 377.984-377.985 0.567-65.879-101.558-65.823-102.126 0.002z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M238.812 505.593c1.306-151.419 124.43-274.551 275.852-275.855 73.323-0.632 142.889 29.461 195.063 80.795 52.499 51.655 80.165 122.138 80.795 195.06 0.567 65.823 102.692 65.879 102.126 0-1.783-207.092-170.893-376.202-377.984-377.981-207.109-1.781-376.216 173.578-377.977 377.981-0.57 65.88 101.558 65.823 102.125 0z"
+                  fill="#E5594F"
+                />
+                <path
+                  d="M590.092 516.452c-0.921 42.171-34.168 75.409-76.339 76.331-42.184 0.921-75.438-35.545-76.331-76.331-0.922-42.191 35.548-75.443 76.331-76.335 42.191-0.924 75.445 35.547 76.339 76.335 1.439 65.755 103.565 65.895 102.126 0-2.158-98.635-79.829-176.303-178.466-178.461-98.62-2.156-176.369 83.087-178.457 178.461-2.155 98.619 83.086 176.37 178.457 178.457 98.619 2.158 176.38-83.081 178.466-178.457 1.439-65.895-100.687-65.755-102.126 0z"
+                  fill="#F39A2B"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+
+            <a
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+              href="#"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+              >
+                <path
+                  d="M736.68 435.86a173.773 173.773 0 0 1 172.042 172.038c0.578 44.907-18.093 87.822-48.461 119.698-32.761 34.387-76.991 51.744-123.581 52.343-68.202 0.876-68.284 106.718 0 105.841 152.654-1.964 275.918-125.229 277.883-277.883 1.964-152.664-128.188-275.956-277.883-277.879-68.284-0.878-68.202 104.965 0 105.842zM285.262 779.307A173.773 173.773 0 0 1 113.22 607.266c-0.577-44.909 18.09-87.823 48.461-119.705 32.759-34.386 76.988-51.737 123.58-52.337 68.2-0.877 68.284-106.721 0-105.842C132.605 331.344 9.341 454.607 7.379 607.266 5.417 759.929 135.565 883.225 285.262 885.148c68.284 0.876 68.2-104.965 0-105.841z"
+                  fill="#4A5699"
+                />
+                <path
+                  d="M339.68 384.204a173.762 173.762 0 0 1 172.037-172.038c44.908-0.577 87.822 18.092 119.698 48.462 34.388 32.759 51.743 76.985 52.343 123.576 0.877 68.199 106.72 68.284 105.843 0-1.964-152.653-125.231-275.917-277.884-277.879-152.664-1.962-275.954 128.182-277.878 277.879-0.88 68.284 104.964 68.199 105.841 0z"
+                  fill="#C45FA0"
+                />
+                <path
+                  d="M545.039 473.078c16.542 16.542 16.542 43.356 0 59.896l-122.89 122.895c-16.542 16.538-43.357 16.538-59.896 0-16.542-16.546-16.542-43.362 0-59.899l122.892-122.892c16.537-16.542 43.355-16.542 59.894 0z"
+                  fill="#F39A2B"
+                />
+                <path
+                  d="M485.17 473.078c16.537-16.539 43.354-16.539 59.892 0l122.896 122.896c16.538 16.533 16.538 43.354 0 59.896-16.541 16.538-43.361 16.538-59.898 0L485.17 532.979c-16.547-16.543-16.547-43.359 0-59.901z"
+                  fill="#F39A2B"
+                />
+                <path
+                  d="M514.045 634.097c23.972 0 43.402 19.433 43.402 43.399v178.086c0 23.968-19.432 43.398-43.402 43.398-23.964 0-43.396-19.432-43.396-43.398V677.496c0.001-23.968 19.433-43.399 43.396-43.399z"
+                  fill="#E5594F"
+                />
+              </svg>
+
+              <h2 class="mt-4 text-xl font-bold text-white">
+                Digital campaigns
+              </h2>
+
+              <p class="mt-1 text-sm text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut
+                quo possimus adipisci distinctio alias voluptatum blanditiis
+                laudantium.
+              </p>
+            </a>
+          </div>
+
+          <div class="mt-12 text-center">
+            <a
+              href="#"
+              class="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
+            >
+              Get Started Today
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- picture pizzle  -->
+      <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header class="text-center">
+            <h2 class="text-xl font-extrabold text-teal-300 sm:text-3xl">
+              Art Collection
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-md text-black">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+              praesentium cumque iure dicta incidunt est ipsam, officia dolor
+              fugit natus?
+            </p>
+          </header>
+
+          <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <li>
+              <a href="#" class="group relative block">
+                <img
+                  src="../img/catWatchingEarth.jpeg"
+                  class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-50"
+                />
+
+                <div
+                  class="absolute inset-0 flex flex-col items-start justify-end p-6"
+                >
+                  <h3 class="text-xl font-medium text-white">Cat & Earth</h3>
+
+                  <span
+                    class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                  >
+                    Join Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="group relative block">
+                <img
+                  src="../img/galaxy.jpeg"
+                  class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-50"
+                />
+
+                <div
+                  class="absolute inset-0 flex flex-col items-start justify-end p-6"
+                >
+                  <h3 class="text-xl font-medium text-white">Galaxy</h3>
+
+                  <span
+                    class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                  >
+                    Open Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1"
+            >
+              <a href="#" class="group relative block">
+                <img
+                  src="../img/space illustration art purple planets.jpeg"
+                  class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-50"
+                />
+
+                <div
+                  class="absolute inset-0 flex flex-col items-start justify-end p-6"
+                >
+                  <h3 class="text-xl font-medium text-white">Space Art</h3>
+
+                  <span
+                    class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                  >
+                    View Now
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- price table  -->
+      <section class="w-3/5 md:h-1/2 m-auto h-full">
+        <table
+          class="table-auto md:w-full text-sm snap-x scroll-pl-4 max-md:grid max-md:gap-x-12 max-md:overflow-x-scroll max-md:-mx-4 max-md:px-4 [&_thead]:bg-slate-50 max-md:[&_thead]:contents max-md:[&_tbody]:contents [&_tbody_tr]:border-b [&_tbody_tr]:border-slate-100 max-md:[&_tr]:contents [&_th]:text-slate-900 [&_th]:font-semibold [&_td]:text-slate-600 [&_th]:py-3 md:[&_th]:first:pl-3 [md:&_th]:last:pr-3 [&_td]:pb-3 md:[&_td]:pt-3 md:[&_td]:first:pl-3 md:[&_td]:last:pr-3 [&_tr_td:first-child]:font-medium [&_tr_td:first-child]:text-slate-900 [&_th]:whitespace-nowrap [&_td]:whitespace-nowrap max-md:[&_th]:min-w-[60vw] max-md:[&_td]:min-w-[60vw] max-md:[&_tr:last-child_td]:min-w-[calc(100vw-2rem)] [&_th]:text-left [&_th]:group-last:text-right [&_td]:text-left md:[&_td:last-of-type]:text-right max-md:[&_th]:sticky max-md:[&_th]:left-0 [&_td]:snap-start max-md:[&_td]:border-b max-md:[&_td:last-of-type]:border-none [&_td]:border-slate-100"
+        >
+          <thead>
+            <tr>
+              <th class="max-md:row-start-1 max-md:col-start-1">Plan</th>
+              <th class="max-md:row-start-3 max-md:col-start-1">Storage</th>
+              <th class="max-md:row-start-5 max-md:col-start-1">Bandwidth</th>
+              <th class="max-md:row-start-7 max-md:col-start-1">Emails</th>
+              <th class="max-md:row-start-9 max-md:col-start-1">SSD</th>
+              <th class="max-md:row-start-11 max-md:col-start-1">$/hr</th>
+              <th class="max-md:row-start-13 max-md:col-start-1">$/mo</th>
+              <th class="max-md:row-start-[15] max-md:col-start-1">
+                <span class="sr-only">Buy</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="max-md:row-start-2 max-md:col-start-1">Basic</td>
+              <td class="max-md:row-start-4 max-md:col-start-1">20GB</td>
+              <td class="max-md:row-start-6 max-md:col-start-1">1TB</td>
+              <td class="max-md:row-start-8 max-md:col-start-1">10</td>
+              <td class="max-md:row-start-10 max-md:col-start-1">
+                <span class="h-5 w-5 flex items-center">
+                  <svg
+                    class="shrink-0 fill-slate-400 mr-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                  >
+                    <rect width="12" height="2" y="5" rx="1" />
+                  </svg>
+                </span>
+              </td>
+              <td class="max-md:row-start-12 max-md:col-start-1">0.015</td>
+              <td class="max-md:row-start-[14] max-md:col-start-1">10</td>
+              <td class="max-md:row-start-[16] max-md:col-start-1">
+                <a
+                  class="inline-flex justify-center rounded-lg bg-indigo-500 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group"
+                  href="#0"
+                >
+                  <span class="md:sr-only">Swipe Right!</span>
+                  <span
+                    class="tracking-normal text-indigo-300 md:text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out max-md:ml-1"
+                    >-&gt;</span
+                  >
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="max-md:row-start-2 max-md:col-start-2">Silver</td>
+              <td class="max-md:row-start-4 max-md:col-start-2">40GB</td>
+              <td class="max-md:row-start-6 max-md:col-start-2">2TB</td>
+              <td class="max-md:row-start-8 max-md:col-start-2">20</td>
+              <td class="max-md:row-start-10 max-md:col-start-2">
+                <span class="h-5 w-5 flex items-center">
+                  <svg
+                    class="shrink-0 fill-emerald-500 mr-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="9"
+                  >
+                    <path
+                      d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"
+                    ></path>
+                  </svg>
+                </span>
+              </td>
+              <td class="max-md:row-start-12 max-md:col-start-2">0.03</td>
+              <td class="max-md:row-start-[14] max-md:col-start-2">20</td>
+              <td class="max-md:row-start-[16] max-md:col-start-2">
+                <a
+                  class="inline-flex justify-center rounded-lg bg-indigo-500 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group"
+                  href="#0"
+                >
+                  <span class="md:sr-only">Swipe Right!</span>
+                  <span
+                    class="tracking-normal text-indigo-300 md:text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out max-md:ml-1"
+                    >-&gt;</span
+                  >
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="max-md:row-start-2 max-md:col-start-3">Gold</td>
+              <td class="max-md:row-start-4 max-md:col-start-3">80GB</td>
+              <td class="max-md:row-start-6 max-md:col-start-3">4TB</td>
+              <td class="max-md:row-start-8 max-md:col-start-3">40</td>
+              <td class="max-md:row-start-10 max-md:col-start-3">
+                <span class="h-5 w-5 flex items-center">
+                  <svg
+                    class="shrink-0 fill-emerald-500 mr-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="9"
+                  >
+                    <path
+                      d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"
+                    ></path>
+                  </svg>
+                </span>
+              </td>
+              <td class="max-md:row-start-12 max-md:col-start-3">0.06</td>
+              <td class="max-md:row-start-[14] max-md:col-start-3">40</td>
+              <td class="max-md:row-start-[16] max-md:col-start-3">
+                <a
+                  class="inline-flex justify-center rounded-lg bg-indigo-500 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group"
+                  href="#0"
+                >
+                  <span class="md:sr-only">Swipe Right!</span>
+                  <span
+                    class="tracking-normal text-indigo-300 md:text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out max-md:ml-1"
+                    >-&gt;</span
+                  >
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="max-md:row-start-2 max-md:col-start-4">Platinum</td>
+              <td class="max-md:row-start-4 max-md:col-start-4">160GB</td>
+              <td class="max-md:row-start-6 max-md:col-start-4">8TB</td>
+              <td class="max-md:row-start-8 max-md:col-start-4">80</td>
+              <td class="max-md:row-start-10 max-md:col-start-4">
+                <span class="h-5 w-5 flex items-center">
+                  <svg
+                    class="shrink-0 fill-emerald-500 mr-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="9"
+                  >
+                    <path
+                      d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"
+                    ></path>
+                  </svg>
+                </span>
+              </td>
+              <td class="max-md:row-start-[12] max-md:col-start-4">0.12</td>
+              <td class="max-md:row-start-[14] max-md:col-start-4">80</td>
+              <td class="max-md:row-start-[16] max-md:col-start-4">
+                <a
+                  class="inline-flex justify-center rounded-lg bg-indigo-500 px-2.5 py-1.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 group"
+                  href="#0"
+                >
+                  <span class="md:sr-only">Get Started</span>
+                  <span
+                    class="tracking-normal text-indigo-300 md:text-white group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out max-md:ml-1"
+                    >-&gt;</span
+                  >
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- 3 image  -->
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 px-3">
+        <article
+          class="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+        >
+          <img alt="" src="../img/bg1.jpg" class="h-56 w-full object-cover" />
+
+          <div class="bg-white p-4 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              10th Oct 2022
+            </time>
+
+            <a href="#">
+              <h3 class="mt-0.5 text-lg text-gray-900">Snow and Sunrise</h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium dolore.
+            </p>
+          </div>
+        </article>
+        <article
+          class="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+        >
+          <img src="../img/owl.jpg" class="h-56 w-full object-cover" />
+
+          <div class="bg-white p-4 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              2nd May 2002
+            </time>
+
+            <a href="#">
+              <h3 class="mt-0.5 text-lg text-gray-900">Night Owl</h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium dolore.
+            </p>
+          </div>
+        </article>
+        <article
+          class="overflow-hidden rounded-lg shadow transition hover:shadow-lg"
+        >
+          <img src="../img/bg2.jpg" class="h-56 w-full object-cover" />
+
+          <div class="bg-white p-4 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500">
+              12th Jun 2024
+            </time>
+
+            <a href="#">
+              <h3 class="mt-0.5 text-lg text-gray-900">Star Sky</h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium dolore.
+            </p>
+          </div>
+        </article>
+      </div>
+      <!-- triple hero  -->
+      <div class="hero lg:h-1/2 h-full bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="../img/fancyCat.jpeg"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold text-center md:text-start">
+              Fancy Cat!
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero lg:h-1/2 h-full bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="../img/fancyCat.jpeg"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold text-center md:text-start">
+              Fancy Cat!
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero lg:h-1/2 h-full bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <img
+            src="../img/fancyCat.jpeg"
+            class="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 class="text-5xl font-bold text-center md:text-start">
+              Fancy Cat!
+            </h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- product section  -->
+      <div class="bg-gray-100 dark:bg-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row -mx-4">
+            <div class="md:flex-1 px-4">
+              <div
+                class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="../img/SoulCat.jpeg"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="flex -mx-2 mb-4">
+                <div class="w-1/2 px-2">
+                  <button
+                    class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div class="w-1/2 px-2">
+                  <button
+                    class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                  >
+                    Add to Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="md:flex-1 px-4">
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                Product Name
+              </h2>
+              <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                ante justo. Integer euismod libero id mauris malesuada
+                tincidunt.
+              </p>
+              <div class="flex mb-4">
+                <div class="mr-4">
+                  <span class="font-bold text-gray-700 dark:text-gray-300"
+                    >Price:</span
+                  >
+                  <span class="text-gray-600 dark:text-gray-300">$29.99</span>
+                </div>
+                <div>
+                  <span class="font-bold text-gray-700 dark:text-gray-300"
+                    >Availability:</span
+                  >
+                  <span class="text-gray-600 dark:text-gray-300">In Stock</span>
+                </div>
+              </div>
+              <div class="mb-4">
+                <span class="font-bold text-gray-700 dark:text-gray-300"
+                  >Select Color:</span
+                >
+                <div class="flex items-center mt-2">
+                  <button
+                    class="w-6 h-6 rounded-full bg-gray-800 dark:bg-gray-200 mr-2"
+                  ></button>
+                  <button
+                    class="w-6 h-6 rounded-full bg-red-500 dark:bg-red-700 mr-2"
+                  ></button>
+                  <button
+                    class="w-6 h-6 rounded-full bg-blue-500 dark:bg-blue-700 mr-2"
+                  ></button>
+                  <button
+                    class="w-6 h-6 rounded-full bg-yellow-500 dark:bg-yellow-700 mr-2"
+                  ></button>
+                </div>
+              </div>
+              <div class="mb-4">
+                <span class="font-bold text-gray-700 dark:text-gray-300"
+                  >Select Size:</span
+                >
+                <div class="flex items-center mt-2">
+                  <button
+                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                  >
+                    S
+                  </button>
+                  <button
+                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                  >
+                    M
+                  </button>
+                  <button
+                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                  >
+                    L
+                  </button>
+                  <button
+                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                  >
+                    XL
+                  </button>
+                  <button
+                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                  >
+                    XXL
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span class="font-bold text-gray-700 dark:text-gray-300"
+                  >Product Description:</span
+                >
+                <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  sed ante justo. Integer euismod libero id mauris malesuada
+                  tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet.
+                  Duis dapibus augue vel ipsum pretium, et venenatis sem
+                  blandit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- grid image section  -->
+      <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header>
+            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+              Astronauts collection
+            </h2>
+
+            <p class="mt-4 max-w-md text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+              praesentium cumque iure dicta incidunt est ipsam, officia dolor
+              fugit natus?
+            </p>
+          </header>
+
+          <div class="mt-8">
+            <p class="text-sm text-gray-500">Showing <span> 4 </span> of 40</p>
+          </div>
+
+          <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="../img/astronaut.jpeg"
+                  class="h-[350px] w-full object-fill md:object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div class="relative bg-white pt-3">
+                  <h3
+                    class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                  >
+                    Basic figure
+                  </h3>
+
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+
+                    <span class="tracking-wider text-gray-900">
+                      £24.00 GBP
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="../img/astronaut.jpeg"
+                  class="h-[350px] w-full object-fill md:object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div class="relative bg-white pt-3">
+                  <h3
+                    class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                  >
+                    Basic figure
+                  </h3>
+
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+
+                    <span class="tracking-wider text-gray-900">
+                      £24.00 GBP
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="../img/astronaut.jpeg"
+                  class="h-[350px] w-full object-fill md:object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div class="relative bg-white pt-3">
+                  <h3
+                    class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                  >
+                    Basic figure
+                  </h3>
+
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+
+                    <span class="tracking-wider text-gray-900">
+                      £24.00 GBP
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="../img/astronaut.jpeg"
+                  class="h-[350px] w-full object-fill md:object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+
+                <div class="relative bg-white pt-3">
+                  <h3
+                    class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                  >
+                    Basic figure
+                  </h3>
+
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+
+                    <span class="tracking-wider text-gray-900">
+                      £24.00 GBP
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <ol class="mt-8 flex justify-center gap-1 text-xs font-medium">
+            <li>
+              <a
+                href="#"
+                class="inline-flex size-8 items-center justify-center rounded border border-gray-100"
+              >
+                <span class="sr-only">Prev Page</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block size-8 rounded border border-gray-100 text-center leading-8"
+              >
+                1
+              </a>
+            </li>
+
+            <li
+              class="block size-8 rounded border-black bg-black text-center leading-8 text-white"
+            >
+              2
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block size-8 rounded border border-gray-100 text-center leading-8"
+              >
+                3
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="block size-8 rounded border border-gray-100 text-center leading-8"
+              >
+                4
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="inline-flex size-8 items-center justify-center rounded border border-gray-100"
+              >
+                <span class="sr-only">Next Page</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- map  -->
+      <section class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+          <iframe
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            title="map"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1600%20Pennsylvania%20Avenue%20NW,%20Washington,%20DC%2020500,%20USA+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+          <div
+            class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+          >
+            <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+              Feedback
+            </h2>
+            <p class="leading-relaxed mb-5 text-gray-600">
+              Claws unsheathed, yet gentle heart, Guiding us through dreams and
+              wonder.
+            </p>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-600"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <button
+              class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              Button
+            </button>
+            <p class="text-xs text-gray-500 mt-3">
+              In the night so dark and grand, Leads a cat, our bold commander.
+              Eyes aglow, with paw and hand, Silent steps, a fierce meander.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- footer  -->
+      <footer class="bg-white lg:grid lg:grid-cols-5 dark:bg-gray-900">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+          <img
+            src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+            alt=""
+            class="absolute inset-0 h-full w-full md:object-cover hidden md:flex"
+          />
+        </div>
+
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div>
+              <p>
+                <span
+                  class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400"
+                >
+                  Call us
+                </span>
+
+                <a
+                  href="#"
+                  class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl dark:text-white"
+                >
+                  0123456789
+                </a>
+              </p>
+
+              <ul
+                class="mt-8 space-y-1 text-sm text-gray-700 dark:text-gray-200"
+              >
+                <li>Monday to Friday: 10am - 5pm</li>
+                <li>Weekend: 10am - 3pm</li>
+              </ul>
+
+              <ul class="mt-8 flex gap-6">
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    <span class="sr-only">Facebook</span>
+
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    <span class="sr-only">Instagram</span>
+
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    <span class="sr-only">Twitter</span>
+
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    <span class="sr-only">GitHub</span>
+
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    <span class="sr-only">Dribbble</span>
+
+                    <svg
+                      class="h-6 w-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <p class="font-medium text-gray-900 dark:text-white">
+                  Services
+                </p>
+
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      1on1 Coaching
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      Company Review
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      Accounts Review
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      HR Consulting
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      SEO Optimisation
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-medium text-gray-900 dark:text-white">Company</p>
+
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      Meet the Team
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    >
+                      Accounts Review
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-12 border-t border-gray-100 pt-12 dark:border-gray-800"
+          >
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <ul class="flex flex-wrap gap-4 text-xs">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                  >
+                    Cookies
+                  </a>
+                </li>
+              </ul>
+
+              <p class="mt-8 text-xs text-gray-500 sm:mt-0 dark:text-gray-400">
+                &copy; 2022. Company Name. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
