@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Meow Online Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="flex flex-col h-screen box-border w-full">
+    <!-- top bar -->
+    <div class="bg-blue-200 top-0 h-20 w-full flex">
+      <img src="../img/catLogo.png" class="h-20 w-20" />
+      <div class="flex flex-grow items-center justify-start">
+        <p class="font-extrabold">
+          <span
+            class="lg:text-3xl md:text-2xl sm:text-xl bg-gradient-to-r from-fuchsia-500 via-blue-600 to-green-200 text-transparent bg-clip-text bg-300% animate-gradient"
+          >
+            Meow Meow Online Shop
+          </span>
+        </p>
+      </div>
+      <div class="flex items-center gap-2 font-bold max-sm:hidden">
+        <button
+          onclick="navigateToHome('../index.html')"
+          class="btn btn-outline btn-info transition duration-500 hover:scale-125"
+        >
+          Home
+        </button>
+        <button
+          class="btn btn-outline btn-success transition duration-500 hover:scale-125"
+        >
+          Portfolio
+        </button>
+        <button
+          class="btn btn-outline btn-warning transition duration-500 hover:scale-125"
+        >
+          About
+        </button>
+        <button
+          class="btn btn-outline btn-error transition duration-500 hover:scale-125"
+        >
+          Contact
+        </button>
+      </div>
+      <div class="flex gap-4 items-center px-2">
+        <img
+          src="../img/shopping-cart-svgrepo-com.svg"
+          class="h-14 w-14 hover:cursor-pointer transition duration-500 hover:scale-125"
+        />
+        <img
+          src="../img/user-svgrepo-com.svg"
+          class="h-14 w-14 hover:cursor-pointer transition duration-500 hover:scale-125"
+        />
+      </div>
+    </div>
+    <!-- middle -->
+    <div class="flex overflow-y-scroll bg-white">
+      <!-- Main slide  -->
+      <div class="carousel w-full h-lvh text-black">
+        <div id="slide1" class="carousel-item flex w-full h-full">
+          <div class="flex flex-col w-full h-full text-black">
+            <div class="w-5/6 h-5/6 m-auto bg-white rounded-lg">
+              <div class="w-full h-2/6">
+                <div
+                  class="w-full h-2/6 pl-4 pt-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Shopping Cart1
+                </div>
+                <!-- progress bar  -->
+                <div class="w-full h-3/6 flex">
+                  <div class="w-full h-full flex items-center justify-center">
+                    <ul class="steps">
+                      <li class="step step-primary">Order</li>
+                      <li class="step">Billing & Info</li>
+                      <li class="step">Comfirm</li>
+                      <li class="step">Received</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-t-green-300 border-t-4 w-full" />
+
+              <!-- middle section  -->
+              <div class="w-full h-full flex flex-col">
+                <div
+                  class="w-full h-12 p-2 font-bold first-letter:text-fuchsia-500"
+                >
+                  Item
+                </div>
+                <!-- first item  -->
+                <div class="w-full h-full grid grid-cols-1 gap-0.5">
+                  <div
+                    class="rounded-lg w-full h-40 bg-gradient-to-r from-indigo-600 via-purple-300 to-pink-500 flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div
+                      class="w-full h-full flex flex-row gap-2 justify-center items-center"
+                    >
+                      <img
+                        src="../img/meteor.jpg"
+                        class="h-24 w-24 rounded-full my-auto"
+                      />
+                      <div class="w-36 h-6 text-center my-auto flex gap-2">
+                        <span class="text-black">Meteor</span>
+                        <span class="text-white">#123</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-2/6 flex">
+                      <div class="w-1/2 h-full bg-blue-50 flex justify-center">
+                        <div
+                          class="text-black font-bold w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span>20</span>
+                        </div>
+                      </div>
+
+                      <div
+                        class="w-1/2 h-full bg-purple-100 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-full flex justify-center">
+                          <!-- item button  -->
+                          <button
+                            type="button"
+                            id="decrement-button-1"
+                            data-input-counter-decrement="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 2"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h16"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="counter-input-1"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-black focus:outline-none focus:ring-0 dark:text-black"
+                            placeholder=""
+                            value="0"
+                            required
+                          />
+                          <button
+                            type="button"
+                            id="increment-button-1"
+                            data-input-counter-increment="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 18"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 1v16M1 9h16"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-lg w-full h-full bg-gradient-to-r from-indigo-700 via-purple-300 to-pink-600 flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div
+                      class="w-full h-40 flex flex-row gap-2 justify-center items-center"
+                    >
+                      <img
+                        src="../img/galaxyPic.jpeg"
+                        class="h-24 w-24 rounded-full my-auto"
+                      />
+                      <div class="w-36 h-6 text-center my-auto flex gap-2">
+                        <span class="text-black">Galaxy</span>
+                        <span class="text-white">#321</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-2/6 flex">
+                      <div
+                        class="w-1/2 h-full bg-indigo-50 flex justify-center"
+                      >
+                        <div
+                          class="text-black font-bold w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span>12</span>
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/2 h-full bg-purple-100 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-full flex justify-center">
+                          <!-- item button  -->
+                          <button
+                            type="button"
+                            id="decrement-button-2"
+                            data-input-counter-decrement="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 2"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h16"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="counter-input-2"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-black focus:outline-none focus:ring-0 dark:text-black"
+                            placeholder=""
+                            value="0"
+                            required
+                          />
+                          <button
+                            type="button"
+                            id="increment-button-2"
+                            data-input-counter-increment="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 18"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 1v16M1 9h16"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-lg w-full h-full bg-gradient-to-r from-indigo-600 via-purple-300 to-pink-700 flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div
+                      class="w-full h-40 flex flex-row gap-2 justify-center items-center"
+                    >
+                      <img
+                        src="../img/blackHole.jpg"
+                        class="h-24 w-24 rounded-full my-auto"
+                      />
+                      <div class="w-36 h-6 text-center my-auto flex gap-2">
+                        <span class="text-black">BlackHole</span>
+                        <span class="text-white">#999</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-2/6 flex">
+                      <div
+                        class="w-1/2 h-full bg-indigo-50 flex justify-center"
+                      >
+                        <div
+                          class="text-black font-bold w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span>2</span>
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/2 h-full bg-purple-100 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-full flex justify-center">
+                          <!-- item button  -->
+                          <button
+                            type="button"
+                            id="decrement-button-3"
+                            data-input-counter-decrement="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 2"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h16"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                            type="text"
+                            id="counter-input-3"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-black focus:outline-none focus:ring-0 dark:text-black"
+                            placeholder=""
+                            value="0"
+                            required
+                          />
+                          <button
+                            type="button"
+                            id="increment-button-3"
+                            data-input-counter-increment="counter-input"
+                            class="m-auto inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                          >
+                            <svg
+                              class="h-2.5 w-2.5 text-gray-900 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 18 18"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 1v16M1 9h16"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- total1 $  -->
+
+              <div class="w-full h-16 mt-4">
+                <div class="w-full h-full flex">
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide4"
+                      class="flex max-md:mt-36 items-center justify-center px-3 max-sm:w-24 h-12 me-3 text-lg font-medium text-teal-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white transition duration-500 hover:scale-125"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 me-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5H1m0 0 4 4M1 5l4-4"
+                        />
+                      </svg>
+                      Previous
+                    </a>
+                  </div>
+                  <div
+                    class="h-full w-2/4 flex max-md:flex-wrap justify-center items-center gap-3 mt-1"
+                  >
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Items:</span>
+                      <span class="itemsPrice">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Tax:</span>
+                      <span class="tax">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Total:</span>
+                      <span class="totalPrice">20</span>
+                      <span>$</span>
+                    </div>
+                  </div>
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide2"
+                      class="flex max-md:mt-36 items-center justify-center px-3 h-12 text-lg font-medium text-teal-500 rounded-lg transition duration-500 hover:scale-125 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      Next
+                      <svg
+                        class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- footer1  -->
+              <div
+                class="w-full h-[800px] grid grid-cols-4 max-md:grid-cols-1 max-md:gap-1 gap-5 mt-40"
+              >
+                <div class="w-full h-1/2 flex flex-col rounded-xl">
+                  <div
+                    class="w-full h-full bg-neutral-500 flex items-center justify-center rounded-xl"
+                  >
+                    <img src="../img/catLogo.png" class="h-36 w-36" />
+                  </div>
+                  <div
+                    class="w-full h-full bg-pink-300 flex items-center justify-center rounded-xl"
+                  >
+                    <div
+                      class="flex text-center leading-8 text-black font-bold"
+                    >
+                      Your Pawsome Delivery for Purrfect Moments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-fuchsia-500">
+                      Services
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Branding</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Design</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Ads</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Affiliate</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-blue-500">
+                      Company
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >About us</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Contact</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Jobs</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partners</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6
+                      class="text-center footer-title first-letter:text-teal-500"
+                    >
+                      Legal
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Terms of service</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Privacy policy</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partner policy</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col w-full h-full">
+            <div
+              class="w-5/6 h-5/6 m-auto bg-gray-300 max-md:bg-white rounded-lg"
+            >
+              <div class="w-full h-2/6">
+                <div
+                  class="w-full h-2/6 pl-4 pt-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Shopping Cart2
+                </div>
+                <!-- progress bar  -->
+                <div class="w-full h-4/6 flex">
+                  <div class="w-full h-4/6 flex items-center justify-center">
+                    <ul class="steps">
+                      <li class="step step-primary">Order</li>
+                      <li class="step step-primary">Billing & Info</li>
+                      <li class="step">Comfirm</li>
+                      <li class="step">Received</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-t-2 border-teal-400 w-11/12 mx-auto" />
+              <!-- middle section  -->
+              <div class="w-full h-3/6">
+                <div
+                  class="w-full h-1/6 p-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Billing And Information
+                </div>
+                <div
+                  class="w-full h-5/6 grid grid-cols-3 max-md:grid-cols-1 gap-2 p-4 text-white"
+                >
+                  <!-- info  -->
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <input
+                    id="phone"
+                    type="text"
+                    placeholder="Phone"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <input
+                    id="email"
+                    type="text"
+                    placeholder="Email"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <input
+                    id="country"
+                    type="text"
+                    placeholder="Country / State / City"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <input
+                    id="address"
+                    type="text"
+                    placeholder="Address"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <input
+                    id="postcode"
+                    type="text"
+                    placeholder="Post-code"
+                    class="input input-bordered input-info w-full"
+                  />
+                  <select class="select select-error w-full">
+                    <option disabled selected>Payment</option>
+                    <option>VISA</option>
+                    <option>MasterCard</option>
+                    <option>PayPal</option>
+                    <option>ApplePay</option>
+                    <option>Crypto</option>
+                  </select>
+                  <select class="select select-error w-full">
+                    <option disabled selected>Delivery (Shipping-Free)</option>
+                    <option>Amazon Doorstep Delivery</option>
+                    <option>Amazon Locker Pick Up</option>
+                    <option>UPS</option>
+                    <option>DHL</option>
+                  </select>
+                  <select class="select select-error w-full">
+                    <option disabled selected>
+                      What is the your favourite cat?
+                    </option>
+                    <option>British Shorthair</option>
+                    <option>Scottish Fold</option>
+                    <option>America Shorthair</option>
+                    <option>Siamese Cat</option>
+                  </select>
+                </div>
+              </div>
+              <hr class="border-t-green-300 border-t-4 w-full max-md:mt-80" />
+              <!-- total2 $  -->
+
+              <div class="w-full h-16 mt-2 max-md:mt-20">
+                <div class="w-full h-full flex flex-row">
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide1"
+                      class="flex max-md:mt-36 items-center justify-center px-3 h-12 max-sm:w-24 me-3 text-lg font-medium text-teal-500 bg-white border transition duration-500 hover:scale-125 border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 me-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5H1m0 0 4 4M1 5l4-4"
+                        />
+                      </svg>
+                      Previous
+                    </a>
+                  </div>
+                  <div
+                    class="h-full w-2/4 flex justify-center items-center gap-3 mt-1"
+                  >
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Items:</span>
+                      <span class="itemsPrice">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Tax:</span>
+                      <span class="tax">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Total:</span>
+                      <span class="totalPrice">20</span>
+                      <span>$</span>
+                    </div>
+                  </div>
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide3"
+                      class="flex max-md:mt-36 items-center justify-center transition duration-500 hover:scale-125 px-3 h-12 text-lg font-medium text-teal-500 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      Next
+                      <svg
+                        class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- footer2  -->
+              <div
+                class="w-full h-full grid grid-cols-4 max-md:grid-cols-1 max-md:gap-1 gap-5 mt-48"
+              >
+                <div
+                  class="w-full h-1/2 max-md:h-full flex flex-col rounded-xl"
+                >
+                  <div
+                    class="w-full h-full bg-neutral-500 flex items-center justify-center rounded-xl"
+                  >
+                    <img src="../img/catLogo.png" class="h-36 w-36" />
+                  </div>
+                  <div
+                    class="w-full h-full bg-pink-300 flex items-center justify-center rounded-xl"
+                  >
+                    <div
+                      class="flex text-center leading-8 text-black font-bold"
+                    >
+                      Your Pawsome Delivery for Purrfect Moments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-fuchsia-500">
+                      Services
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Branding</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Design</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Ads</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Affiliate</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-blue-500">
+                      Company
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >About us</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Contact</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Jobs</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partners</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-teal-500">
+                      Legal
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Terms of service</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Privacy policy</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partner policy</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col w-full h-full">
+            <div class="w-5/6 h-5/6 m-auto bg-gray-300 rounded-lg">
+              <div class="w-full h-2/6">
+                <div
+                  class="w-full h-2/6 pl-4 pt-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Shopping Cart3
+                </div>
+                <!-- progress bar  -->
+                <div class="w-full h-4/6 flex">
+                  <div class="w-full h-4/6 flex items-center justify-center">
+                    <ul class="steps">
+                      <li class="step step-primary">Order</li>
+                      <li class="step step-primary">Billing & Info</li>
+                      <li class="step step-primary">Comfirm</li>
+                      <li class="step">Received</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-t-2 border-teal-400 w-11/12 mx-auto" />
+              <!-- middle section  -->
+              <div class="w-full h-3/6">
+                <div
+                  class="w-full h-1/6 p-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Order Comfirmation
+                </div>
+                <!-- first item  -->
+                <div
+                  class="w-full h-3/6 grid grid-cols-3 max-md:grid-cols-1 gap-2 p-3"
+                >
+                  <div
+                    class="rounded-lg w-full h-full bg-white flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div class="w-full h-full flex flex-row justify-evenly">
+                      <div class="w-36 h-6 text-center my-auto">
+                        <span class="text-black">Meteor</span>
+                        <span class="text-neutral-400">#123</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-4/6 flex">
+                      <div
+                        class="w-1/2 h-full bg-green-400 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-1/2 flex justify-center">
+                          <!-- item button  -->
+
+                          <input
+                            type="text"
+                            id="counter-output-1"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white"
+                            placeholder=""
+                            value="1"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/2 h-full bg-green-600 flex justify-center"
+                      >
+                        <div
+                          class="w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span id="item1-price">20.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-lg w-full h-full bg-white flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div class="w-full h-full flex flex-row justify-evenly">
+                      <div class="w-36 h-6 text-center my-auto">
+                        <span class="text-black">Galaxy</span>
+                        <span class="text-neutral-400">#321</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-4/6 flex">
+                      <div
+                        class="w-1/2 h-full bg-green-400 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-1/2 flex justify-center">
+                          <!-- item button  -->
+
+                          <input
+                            type="text"
+                            id="counter-output-2"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white"
+                            placeholder=""
+                            value="1"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/2 h-full bg-green-600 flex justify-center"
+                      >
+                        <div
+                          class="w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span id="item2-price">12.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-lg w-full h-full bg-white flex flex-col relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1.5s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/40"
+                  >
+                    <div class="w-full h-full flex flex-row justify-evenly">
+                      <div class="w-36 h-6 text-center my-auto">
+                        <span class="text-black">BlackHole</span>
+                        <span class="text-neutral-400">#999</span>
+                      </div>
+                    </div>
+                    <div class="w-full h-4/6 flex">
+                      <div
+                        class="w-1/2 h-full bg-green-400 flex justify-center"
+                      >
+                        <div class="my-auto w-full h-1/2 flex justify-center">
+                          <!-- item button  -->
+
+                          <input
+                            type="text"
+                            id="counter-output-3"
+                            data-input-counter
+                            class="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0 dark:text-white"
+                            placeholder=""
+                            value="1"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/2 h-full bg-green-600 flex justify-center"
+                      >
+                        <div
+                          class="w-full h-full flex justify-center items-center"
+                        >
+                          <span>$</span>
+                          <span id="item3-price">2.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full h-28 m-auto flex items-center justify-center max-md:mt-12 max-md:w-[330px]"
+                >
+                  <button
+                    id="yourAddress"
+                    class="h-full w-full btn btn-primary rounded-lg max-md:text-xs max-md:w-[330px]"
+                  >
+                    1600 Pennsylvania Ave NW Washington, DC 20500
+                  </button>
+                </div>
+              </div>
+
+              <!-- total3 $  -->
+
+              <div class="w-full h-16 mt-24 max-md:mt-24">
+                <div class="w-full h-full flex flex-row">
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide2"
+                      class="flex max-md:mt-36 items-center justify-center px-3 h-12 transition duration-500 hover:scale-125 me-3 max-sm:w-24 text-lg font-medium text-teal-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 me-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5H1m0 0 4 4M1 5l4-4"
+                        />
+                      </svg>
+                      Previous
+                    </a>
+                  </div>
+                  <div
+                    class="h-full w-2/4 flex max-md:flex-wrap justify-center items-center gap-3 mt-1"
+                  >
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Items:</span>
+                      <span class="itemsPrice">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Tax:</span>
+                      <span class="tax">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Total:</span>
+                      <span class="totalPrice">20</span>
+                      <span>$</span>
+                    </div>
+                  </div>
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide4"
+                      class="flex max-md:mt-36 transition duration-500 hover:scale-125 items-center justify-center px-3 h-12 text-lg font-medium text-teal-500 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      Next
+                      <svg
+                        class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- footer3  -->
+              <div
+                class="w-full h-full grid grid-cols-4 max-md:grid-cols-1 max-md:gap-1 gap-5 mt-48"
+              >
+                <div
+                  class="w-full h-1/2 max-md:h-full flex flex-col rounded-xl"
+                >
+                  <div
+                    class="w-full h-full bg-neutral-500 flex items-center justify-center rounded-xl"
+                  >
+                    <img src="../img/catLogo.png" class="h-36 w-36" />
+                  </div>
+                  <div
+                    class="w-full h-full bg-pink-300 flex items-center justify-center rounded-xl"
+                  >
+                    <div
+                      class="flex text-center leading-8 text-black font-bold"
+                    >
+                      Your Pawsome Delivery for Purrfect Moments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-fuchsia-500">
+                      Services
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Branding</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Design</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Ads</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Affiliate</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-blue-500">
+                      Company
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >About us</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Contact</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Jobs</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partners</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-teal-500">
+                      Legal
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Terms of service</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Privacy policy</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partner policy</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="flex flex-col w-full h-full">
+            <div class="w-5/6 h-5/6 m-auto bg-gray-300 rounded-lg">
+              <div class="w-full h-2/6">
+                <div
+                  class="w-full h-2/6 pl-4 pt-4 font-bold first-letter:text-fuchsia-500"
+                >
+                  Shopping Cart4
+                </div>
+                <!-- progress bar  -->
+                <div class="w-full h-4/6 flex">
+                  <div class="w-full h-4/6 flex items-center justify-center">
+                    <ul class="steps">
+                      <li class="step step-primary">Order</li>
+                      <li class="step step-primary">Billing & Info</li>
+                      <li class="step step-primary">Comfirm</li>
+                      <li class="step step-primary">Received</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- middle section  -->
+              <div class="w-full h-3/6 flex items-center justify-center p-3">
+                <!-- all set  -->
+                <img
+                  src="../img/checkMark.png"
+                  class="w-44 h-44 max-sm:w-32 max-sm:h-32"
+                />
+              </div>
+
+              <!-- total4 $  -->
+
+              <div class="w-full h-16 mt-2 max-md:mt-24">
+                <div class="w-full h-full flex flex-row">
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide3"
+                      class="flex max-md:mt-36 transition duration-500 hover:scale-125 items-center justify-center px-3 h-12 me-3 max-sm:w-24 text-lg font-medium text-teal-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 me-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 5H1m0 0 4 4M1 5l4-4"
+                        />
+                      </svg>
+                      Previous
+                    </a>
+                  </div>
+                  <div
+                    class="h-full w-2/4 flex max-md:flex-wrap justify-center items-center gap-3 mt-1"
+                  >
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Items:</span>
+                      <span class="itemsPrice">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Tax:</span>
+                      <span class="tax">20</span>
+                      <span>$</span>
+                    </div>
+                    <div
+                      class="h-full w-40 max-[460px]:w-28 bg-teal-200 rounded-xl flex justify-center items-center"
+                    >
+                      <span>Total:</span>
+                      <span class="totalPrice">20</span>
+                      <span>$</span>
+                    </div>
+                  </div>
+                  <div class="h-full w-1/4 flex justify-center items-center">
+                    <a
+                      href="#slide1"
+                      class="flex max-md:mt-36 items-center justify-center transition duration-500 hover:scale-125 px-3 h-12 text-lg font-medium text-teal-500 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >
+                      Next
+                      <svg
+                        class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- footer4  -->
+              <div
+                class="w-full h-full grid grid-cols-4 max-md:grid-cols-1 max-md:gap-1 gap-5 mt-48"
+              >
+                <div
+                  class="w-full h-1/2 max-md:h-full flex flex-col rounded-xl"
+                >
+                  <div
+                    class="w-full h-full bg-neutral-500 flex items-center justify-center rounded-xl"
+                  >
+                    <img src="../img/catLogo.png" class="h-36 w-36" />
+                  </div>
+                  <div
+                    class="w-full h-full bg-pink-300 flex items-center justify-center rounded-xl"
+                  >
+                    <div
+                      class="flex text-center leading-8 text-black font-bold"
+                    >
+                      Your Pawsome Delivery for Purrfect Moments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-fuchsia-500">
+                      Services
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Branding</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Design</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Ads</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Affiliate</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-blue-500">
+                      Company
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >About us</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Contact</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Jobs</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partners</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="w-full max-md:h-full h-1/2 bg-neutral-300 flex items-center justify-center rounded-xl"
+                >
+                  <nav
+                    class="flex flex-col max-md:items-center max-md:justify-center leading-10 text-black font-bold"
+                  >
+                    <h6 class="footer-title first-letter:text-teal-500">
+                      Legal
+                    </h6>
+                    <div
+                      class="mb-2 flex flex-col max-md:flex-row max-md:gap-2 max-md:text-sm"
+                    >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Terms of service</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Privacy policy</a
+                      >
+                      <a
+                        class="link link-hover hover:text-white hover:transition duration-500 hover:scale-125 max-md:hover:scale-110"
+                        >Partner policy</a
+                      >
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bottom bar -->
+    <div
+      class="bg-teal-400 fixed bottom-0 h-10 w-full flex items-center justify-center"
+    >
+      <div class="text-black font-bold max-md:font-thin max-md">
+        © 2024 Copyright
+        <a href="https://tailwind-elements.com/"
+          >UnderWorld CEO Cat Inc. All right reserved.</a
+        >
+      </div>
+    </div>
+    <script src="/shopping.js"></script>
+  </body>
+</html>

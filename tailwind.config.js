@@ -2,7 +2,27 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        animatedgradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
+      backgroundSize: {
+        "300%": "300%",
+      },
+      animation: {
+        gradient: "animatedgradient 5s ease infinite",
+      },
+    },
+
+    keyframes: {
+      shimmer: {
+        "100%": { transform: "translateX(100%)" },
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
