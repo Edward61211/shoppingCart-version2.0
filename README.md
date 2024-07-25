@@ -1,4 +1,4 @@
-# ShoppingCart-version2.0
+# ShoppingCart-version2.0 (Frontend only)
 
 ## Overview
 This project implements a basic e-commerce website with the following features:
@@ -30,9 +30,3 @@ Implements basic JavaScript functionality for managing the shopping cart, includ
 - Vanilla JavaScript
 
 
-
-## License
-[Specify the license under which your project is released, if applicable]
-
-## Contact
-[Your contact information or way for users to reach out with questions]
